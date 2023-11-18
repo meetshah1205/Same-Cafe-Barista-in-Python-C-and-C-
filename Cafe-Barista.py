@@ -37,13 +37,26 @@ if isgood == "Yes":
         if caup == "Cash" or caup == "cash":
             print("Ok then give cash $")
         elif caup == "Cheque" or caup == "cheque":
+            print("YOU HAVE SO MUCH MONEY!!!")
+            print("Anyway ")
             print("Here are the cheque details:\n")
             payto = print("Payee: Envixy Coffee Shop")
             subto = int(donate) + total
             ammount = print("Amount: $" + str(subto))
             amountWords = input("Amount In Words: ")
             date = input("Date: ")
-            exit()
+            print("So we will deposit this cheque and the ammount shall be deducted soon.")
+            print("Please just check if the details on the cheque are correct.")
+            print("Payee: Envixy Coffee Shop")
+            print("Ammount: $" + str(subto))
+            print("Ammount In Words: " + amountWords)
+            correct = input("Are the deatils correct?\n")
+            if correct == "Yes" or correct == "yes":
+                print("The cheque will be deposited soon and the ammount shall be deducted soon.")
+                exit()
+            else:
+                print("IDIOT SO WHY DON'T YOU FILL IN THE CORRECT DETAILS IN THE FIRET TIME")
+                exit("NEVER RETURN IN THIS CAFÈ EVER AGAIN")
         else:
             print("Enter your account Info.")
         bank = input("Enter your bank\n")
@@ -61,4 +74,7 @@ if isgood == "Yes":
 else:
      print("No problems!!!!")
      print("The price for you has been increased by 100 times you evil person\nNow the price for you is $" + str(price * 100))
-     exit()
+     print("Now pay the cost $" + str(price) *100)
+     print("You dont have an option")
+     print("YOU CAN'T ESCAPE!!!!")
+     exit("PAISE NAHI HAI TO BARTAN DHO")

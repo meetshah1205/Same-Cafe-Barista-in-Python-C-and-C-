@@ -1,3 +1,4 @@
+import time as t
 print("Welcome")
 name = input("What is your name\n")
 if name == "Ben":
@@ -20,6 +21,9 @@ quantity = input()
 price = 8
 total = int(quantity) * price
 print("So " + name + ", you ordered " + quantity + " " + order + " and your total is $" + str(total))
+#---'-----------------'-----------------'------------------------------------------------------'------
+#Main script was till here 
+#Additional script asking for donation
 print("And would you like to donate for the local programmers club?\n")
 isgood = input()
 if isgood == "Yes":
@@ -38,6 +42,7 @@ if isgood == "Yes":
             print("Ok then give cash $")
         elif caup == "Cheque" or caup == "cheque":
             print("YOU HAVE SO MUCH MONEY!!!")
+            t.sleep(5)
             print("Anyway ")
             print("Here are the cheque details:\n")
             payto = print("Payee: Envixy Coffee Shop")
@@ -78,3 +83,4 @@ else:
      print("You dont have an option")
      print("YOU CAN'T ESCAPE!!!!")
      exit("PAISE NAHI HAI TO BARTAN DHO")
+#This script works better than I ever expected !!!!!!!     

@@ -7,7 +7,7 @@ print("Welcome")
 name = input("What is your name\n")
 
 # Check if the user is an "Evil Ben"
-if name == "Ben":
+if name == "Ben".lower():
     isevil = input("Are you evil?\n")
     if isevil.lower() == "yes":
         print("You are not welcome here!! Get out You Evil Ben!!!")
